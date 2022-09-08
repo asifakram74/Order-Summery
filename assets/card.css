@@ -1,145 +1,162 @@
-/** @format */
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Bree Serif", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
 }
 
 body {
-	background-image: url("../images/pattern-background-desktop.svg");
-	background-repeat: no-repeat;
-	background-color: #e0e8ff;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
 }
 
 /* ................... Glooble Tag .................... */
 h1 {
-	margin-top: 1rem;
-	font-size: 26px;
+    margin-top: 1rem;
+    font-size: 26px;
 }
 
-h4 {
-	margin-top: 0.7rem;
-	margin-left: 0.7rem;
+h2 {
+
+    font-size: 15px;
 }
 
 .imgContent p {
-	font-size: 16px;
-	line-height: 24px;
-	width: 300px;
-	margin: auto;
-	color: rgb(119, 118, 118);
-	margin-top: 0.7rem;
+    font-size: 16px;
+    line-height: 24px;
+    width: 300px;
+    margin: auto;
+    color: rgb(119, 118, 118);
+    margin-top: .7rem;
+
 }
 
 .text p {
-	color: rgb(102, 102, 102);
+    color: rgb(102, 102, 102);
 }
 
 .newContent p {
-	color: rgb(73, 73, 73);
-	padding: 2rem;
+    color: rgb(73, 73, 73);
+    padding: 2rem;
 }
 
+
 .newContent p:hover {
-	color: #000;
-	cursor: pointer;
+    color: #000;
+    cursor: pointer;
+}
+
+.para p {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: #382ae1;
+}
+
+.para p:hover {
+    text-decoration: none;
+    color: #766cf1;
 }
 
 /* ................................................ */
 .mainSection {
-	height: 100vh;
-	display: flex;
-	align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
 .container {
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
-	background-color: #ffffff;
-	border-radius: 16px;
-	border: none;
-	width: 398px;
-	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgb(243, 243, 243);
+    width: 398px;
+    margin: 0 auto;
 }
 
 .imgContent img {
-	width: 100%;
-	border-top-left-radius: 18px;
-	border-top-right-radius: 18px;
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
 
 .textContent img {
-	width: 44px;
-	margin-top: 0.8rem;
+    width: 100%;
 }
+
 .price-box {
-	display: flex;
+    display: flex;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
 .textContent {
-	background-color: rgb(247, 247, 247);
-	border-radius: 14px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-	width: 350px;
-	margin-top: 0.8rem;
-	padding: 16px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    margin-top: .8rem;
+    padding: 16px;
 }
 
 .newContent button {
-	padding: 13px;
-	border-radius: 10px;
-	margin-top: 1.4rem;
-	width: 341px;
-	outline: none;
-	border: none;
-	background-color: #382ae1;
-	color: #fff;
-	font-size: 14px;
-	cursor: pointer;
-	box-shadow: 10px 12px 20px 2px rgb(198, 186, 247);
+    padding: 13px;
+    border-radius: 10px;
+    margin-top: 1.4rem;
+    width: 341px;
+    outline: none;
+    border: none;
+    background-color: #382ae1;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 10px 12px 20px 2px rgb(198, 186, 247);
 }
 
 .newContent button:hover {
-	background-color: #766cf1;
-	color: #fff;
-	box-shadow: 5px 10px 15px 2px rgb(220, 211, 255);
-}
-
-a:hover {
-	text-decoration: none;
-	color: #766cf1;
+    background-color: #766cf1;
+    color: #fff;
+    box-shadow: 5px 10px 15px 2px rgb(220, 211, 255);
 }
 
 /* ............................Media Query ............................. */
 
 @media screen and (max-width: 375px) {
-	.imgContent img {
-		width: 325px;
-	}
 
-	.content {
-		width: 325px;
-		height: 500px;
-	}
+    .imgContent img {
+        width: 325px
+    }
 
-	.textContent {
-		width: 295px;
-	}
+    .content {
+        width: 325px;
+        height: 500px;
+    }
 
-	.newContent button {
-		width: 295px;
-	}
+    .textContent {
+        width: 295px;
+    }
+
+    .newContent button {
+        width: 295px;
+
+    }
 }
